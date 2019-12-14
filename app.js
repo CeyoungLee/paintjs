@@ -37,7 +37,7 @@ function handleColorClick(event) {
 }
 
 function handleRangeChange(event) {
-  console.log(event);
+  console.log(event.target.value);
 
 }
 
