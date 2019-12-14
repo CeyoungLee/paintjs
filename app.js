@@ -49,7 +49,7 @@ function handleRangeChange(event) {
 }
 
 function handleModeClick() {
-  if (filling=== true) {
+  if (filling === true) {
     filling = false;
     mode.innerText = "Fill"
   } else {
@@ -60,7 +60,9 @@ function handleModeClick() {
 }
 
 function handleCanvasClick(event) {
-  ctx.fillRect(0,0,canvas.width,canvas.height);
+  if (filling === true) {
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  }
 }
 
 if (canvas) {
